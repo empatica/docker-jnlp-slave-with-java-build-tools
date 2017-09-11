@@ -1,5 +1,5 @@
 IMAGE = empatica/jnlp-slave-with-java-build-tools
-VERSION = 3.3-1
+VERSION = 4.1-1
 
 .PHONY: build push release
 

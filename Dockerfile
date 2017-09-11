@@ -8,9 +8,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ENV GRADLE_HOME /opt/gradle
-ENV GRADLE_VERSION 3.3
+ENV GRADLE_VERSION 4.1
 
-ARG GRADLE_DOWNLOAD_SHA256=c58650c278d8cf0696cab65108ae3c8d95eea9c1938e0eb8b997095d5ca9a292
+ARG GRADLE_DOWNLOAD_SHA256=d55dfa9cfb5a3da86a1c9e75bb0b9507f9a8c8c100793ccec7beb6e259f9ed43
 
 RUN curl -fsSL "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" -o gradle.zip && \
     echo "${GRADLE_DOWNLOAD_SHA256} gradle.zip" | sha256sum --check - && \
