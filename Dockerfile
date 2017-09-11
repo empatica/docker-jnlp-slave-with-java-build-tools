@@ -45,4 +45,6 @@ RUN curl -fsSL "http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/bi
 
 USER jenkins
 
+RUN mkdir -p /home/jenkins/.gradle
+
 VOLUME "/home/jenkins/.gradle"
